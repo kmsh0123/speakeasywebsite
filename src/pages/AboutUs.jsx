@@ -6,14 +6,14 @@ import { Link as ScrollLink } from "react-scroll";
 const AboutUs = () => {
   return (
     <div
-      className="flex flex-col-reverse md:flex-row-reverse justify-between items-center rounded-lg gap-10 px-4 py-10"
+      className="flex flex-col-reverse md:flex-row-reverse justify-between items-center rounded-lg gap-10 px-4 py-10 bg-[#504128]"
       id="aboutUs"
     >
       <div className="w-full md:w-1/2">
-        <h1 className="text-3xl sm:text-4xl text-center p-6 text-gray-900 font-semibold">
+        <h1 className="text-3xl sm:text-4xl text-center p-6 text-white font-semibold">
           Te facilitamos el viajar
         </h1>
-        <p className="text-sm sm:text-base text-center font-medium text-gray-900 px-2">
+        <p className="text-sm sm:text-base text-center font-medium text-white px-2">
           Fundada en 1999, Speakeasy es una academia de idiomas de gran renombre
           situada en Sant Pere de Ribes, Cataluña. Con planes individualizdos de
           intercambios internacionales, Speakasy te ayuda a programar todo lo

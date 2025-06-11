@@ -6,16 +6,19 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import travel from "../assets/airplane.jpg"
-import travel1 from "../assets/travel1.jpg"
-import travel2 from "../assets/travel2.webp"
-import travel3 from "../assets/travel3.jpg"
+import travel from "../assets/airplane.jpg";
+import travel1 from "../assets/travel1.jpg";
+import travel2 from "../assets/travel2.webp";
+import travel3 from "../assets/travel3.jpg";
+import { Link as ScrollLink } from "react-scroll";
 
 export function Travel() {
   return (
-    <div className="container mx-auto px-4 py-8" id="travel">
-      <h1 className="text-2xl md:text-4xl font-bold text-center my-10">Nos encargamos del viaje por ti</h1>
-      
+    <div className="container mx-auto px-4 py-8 bg-[#504128]" id="travel">
+      <h1 className="text-2xl md:text-4xl font-bold text-center my-10 text-white">
+        Nos encargamos del viaje por ti
+      </h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card className="w-full">
           <CardHeader color="blue-gray" className="relative h-56">
@@ -30,7 +33,8 @@ export function Travel() {
               Reserva de vuelos
             </Typography>
             <Typography>
-              Nos encargamos de buscarte tanto los vuelos de ida como los de vuelta.
+              Nos encargamos de buscarte tanto los vuelos de ida como los de
+              vuelta.
             </Typography>
           </CardBody>
         </Card>
@@ -45,10 +49,11 @@ export function Travel() {
           </CardHeader>
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
-             Tours y actividades
+              Tours y actividades
             </Typography>
             <Typography>
-              Te organizamos diferentes actividades para conocer el lugar y aprender sobre su cultura.
+              Te organizamos diferentes actividades para conocer el lugar y
+              aprender sobre su cultura.
             </Typography>
           </CardBody>
         </Card>
@@ -66,7 +71,7 @@ export function Travel() {
               Transporte
             </Typography>
             <Typography>
-             Te organizamos el transporte entre actividades y aeropuertos.
+              Te organizamos el transporte entre actividades y aeropuertos.
             </Typography>
           </CardBody>
         </Card>
@@ -84,14 +89,24 @@ export function Travel() {
               Alojamiento
             </Typography>
             <Typography>
-             Alójate con una familia y siéntete como uno más, o reserva una habitación, también te ayudamos!
+              Alójate con una familia y siéntete como uno más, o reserva una
+              habitación, también te ayudamos!
             </Typography>
           </CardBody>
         </Card>
       </div>
-      
+
       <div className="flex justify-center mt-8">
-        <Button className="bg-[#FF8C00] px-6 py-3 text-sm md:text-base">CLASES DE IDIOMAS</Button>
+        <ScrollLink
+          to="contact-us"
+          smooth={true}
+          duration={500}
+          className="w-full sm:w-auto"
+        >
+         <Button className="bg-[#FF8C00] px-6 py-3 text-sm md:text-base">
+          CLASES DE IDIOMAS
+        </Button>
+        </ScrollLink>
       </div>
     </div>
   );
